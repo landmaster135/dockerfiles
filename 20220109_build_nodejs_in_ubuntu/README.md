@@ -14,7 +14,7 @@ docker run -it --rm --name my-running-app my-nodejs-app
 ### Execute in the machine via docker image.
 
 ```shell
-npm run start
+npm run <script>
 ```
 
 ### Execute in the windows machine while the machine being booted by docker.
