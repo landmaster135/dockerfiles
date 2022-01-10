@@ -4,9 +4,9 @@
 
 ```dosbatch
 # DockerイメージをBuildする
-docker build -t my-python-app .
+docker build -t my-python-env .
 # Dockerイメージを起動する
-docker run -it --rm --name my-running-app my-python-app
+docker run -it --rm --name my-running-app my-python-env
 ```
 
 ## Run a single Python script
