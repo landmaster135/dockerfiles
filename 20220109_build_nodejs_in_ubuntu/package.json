@@ -1,0 +1,10 @@
+{
+    "name": "feed-fetcher",
+    "version": "1.0.0",
+    "description": "update file for only feed",
+    "main": "./index.js",
+    "scripts": {
+        "debug": "node index.js --config-yaml=configOfFeedFetcher.yml",
+        "feed-fetcher:run": "npm run feed-fetcher run"
+    }
+}
