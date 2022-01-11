@@ -18,6 +18,11 @@ python3 -V
 pip -V
 ```
 
+## Check package list.
+```shell
+pip list
+```
+
 ## Test with Docker
 
 ### Execute in the machine via docker image.
