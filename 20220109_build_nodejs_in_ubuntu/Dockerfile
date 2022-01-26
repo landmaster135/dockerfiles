@@ -31,8 +31,17 @@ COPY ./ /usr/app
 # to get files from local
 ADD README.md .
 
+# Case 1 : execute app in git ---------------------------------------------
 # use git
 # RUN apt install git-all -y
 # RUN npm install https://github.com/Landmaster135/FeedFetcher
 # RUN chmod 777 node_modules/feed-fetcher/bin/run
 # CMD npm run start
+#  ------------------------------------------------------------------------
+
+# Case 2 : execute app with docker ----------------------------------------
+# install modules
+# RUN npm install node-fetch
+# RUN npm install js-yaml
+# RUN npm install commander
+#  ------------------------------------------------------------------------
