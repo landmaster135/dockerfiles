@@ -13,13 +13,9 @@ RUN gcc --version
 
 # install Rust
 ENV RUST_VERSION stable
-# RUN curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf -y | sh
-# RUN curl https://sh.rustup.rs -sSf -y | sh
-RUN curl https://sh.rustup.rs -sSf | sh -s -- -y --default-toolchain ${RUST_VERSION}
+RUN curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh -s -- -y --default-toolchain ${RUST_VERSION}
 
 # # setup PATH
-# RUN export PATH="$HOME/.cargo/bin:$PATH"
-# RUN source $HOME/.cargo/env
 ENV PATH="/root/.cargo/bin:$PATH"
 
 # decide working directory
