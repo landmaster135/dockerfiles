@@ -33,7 +33,4 @@ python <script>
 
 ### Execute in the windows machine while the machine being booted by docker.
 
-```dosbatch
-docker ps
-docker cp <container ID>:/usr/app/testtest.md .
-```
+[Refer about "docker ps" and "docker cp" to this Markdown.](../README.md)

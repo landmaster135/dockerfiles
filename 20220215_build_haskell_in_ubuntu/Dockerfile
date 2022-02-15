@@ -1,26 +1,26 @@
 FROM ubuntu:latest
 
 # RUN apt update
+RUN apt-get update
 RUN apt update
 
 # for install n
-# RUN apt install -y curl
-
-# decide working directory
-WORKDIR /usr/app
+RUN apt install -y curl
 
 # install Haskell
 RUN apt -y install haskell-platform
 
+# decide working directory
+WORKDIR /usr/app
 
 # In case with Haskell Stack: Start -----------------------
 
 # install Haskell Stack (プロジェクト管理機能も備える)
-RUN apt -y install haskell-stack
-RUN stack upgrade
-RUN echo "export PATH=$HOME/.local/bin:$PATH" >> ~/.bashrc
-RUN source ~/.bashrc
-RUN stack setup
+# RUN apt -y install haskell-stack
+# RUN stack upgrade
+# RUN echo "export PATH=$HOME/.local/bin:$PATH" >> ~/.bashrc
+# RUN source ~/.bashrc
+# RUN stack setup
 
 # use Haskell Stack
 # RUN stack new sample

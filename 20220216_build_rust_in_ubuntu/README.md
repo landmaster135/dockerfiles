@@ -5,13 +5,13 @@
 ### DockerイメージをBuildする
 
 ```dosbatch
-docker build -t my-nodejs-app .
+docker build -t my-rust-app .
 ```
 
 ### Dockerイメージを起動する
 
 ```dosbatch
-docker run -it --rm --name my-running-app my-nodejs-app
+docker run -it --rm --name my-running-rust-app my-rust-app
 ```
 
 ## Test with Docker

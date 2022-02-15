@@ -5,13 +5,13 @@
 ### DockerイメージをBuildする
 
 ```dosbatch
-docker build -t my-nodejs-app .
+docker build -t my-haskell-app .
 ```
 
 ### Dockerイメージを起動する
 
 ```dosbatch
-docker run -it --rm --name my-running-app my-nodejs-app
+docker run -it --rm --name my-running-haskell-app my-haskell-app
 ```
 
 ## Test with Docker
