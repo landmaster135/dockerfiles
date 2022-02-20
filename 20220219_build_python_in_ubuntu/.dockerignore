@@ -1,0 +1,12 @@
+### macOS ###
+# General
+.DS_Store
+# Thumbnails
+._*
+
+### Docker ###
+Dockerfile
+
+### Git target ###
+LICENSE
+README.md
