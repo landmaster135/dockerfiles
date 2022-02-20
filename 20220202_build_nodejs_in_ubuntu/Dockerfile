@@ -27,7 +27,7 @@ WORKDIR /usr/app
 # Case 1 : execute app in git ---------------------------------------------
 # use git
 # RUN apt install git-all -y
-# RUN npm install https://github.com/Landmaster135/FeedFetcher
+# RUN npm install https://github.com/landmaster135/FeedFetcher
 # RUN chmod 777 node_modules/feed-fetcher/bin/run
 # CMD npm run start
 #  ------------------------------------------------------------------------
