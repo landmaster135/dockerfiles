@@ -4,7 +4,7 @@
 
 Use [this repository]().
 
-## Build Docker
+## Build and Run Docker
 
 DockerイメージをBuildする
 
@@ -16,6 +16,12 @@ Dockerイメージを起動する
 
 ```dosbatch
 docker run -it --rm --name my-running-container my-cloudsdk-container
+```
+
+両方まとめて実行する
+
+```dosbatch
+docker build -t my-cloudsdk-container . && docker run -it --rm --name my-running-container my-cloudsdk-container
 ```
 
 ## Execute shell script in the CLI in the container after docker run

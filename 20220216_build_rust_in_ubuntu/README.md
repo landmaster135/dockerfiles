@@ -1,17 +1,23 @@
 # Test
 
-## Build Docker
+## Build and Run Docker
 
-### DockerイメージをBuildする
+DockerイメージをBuildする
 
 ```dosbatch
-docker build -t my-rust-app .
+docker build -t my-cloudsdk-container .
 ```
 
-### Dockerイメージを起動する
+Dockerイメージを起動する
 
 ```dosbatch
-docker run -it --rm --name my-running-rust-app my-rust-app
+docker run -it --rm --name my-running-container my-cloudsdk-container
+```
+
+両方まとめて実行する
+
+```dosbatch
+docker build -t my-cloudsdk-container . && docker run -it --rm --name my-running-container my-cloudsdk-container
 ```
 
 ## Test with Docker

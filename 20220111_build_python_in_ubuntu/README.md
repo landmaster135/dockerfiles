@@ -2,11 +2,22 @@
 
 ## Build Docker
 
+DockerイメージをBuildする
+
 ```dosbatch
-# DockerイメージをBuildする
-docker build -t my-python-app .
-# Dockerイメージを起動する
-docker run -it --rm --name my-running-app my-python-app
+docker build -t my-cloudsdk-container .
+```
+
+Dockerイメージを起動する
+
+```dosbatch
+docker run -it --rm --name my-running-container my-cloudsdk-container
+```
+
+両方まとめて実行する
+
+```dosbatch
+docker build -t my-cloudsdk-container . && docker run -it --rm --name my-running-container my-cloudsdk-container
 ```
 
 ## Check version of python and pip.
