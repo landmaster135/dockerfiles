@@ -16,6 +16,12 @@ If you receive following error message, you need to remove docker image cache.
 #6 0.902 E: You don't have enough free space in /var/cache/apt/archives/.
 ```
 
+Execute this command to remove cache by id.
+
+```bash
+docker rmi <id>
+```
+
 Execute this command to check many cache. (for zsh in macOS terminal)
 
 ```bash
