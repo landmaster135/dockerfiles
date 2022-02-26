@@ -34,6 +34,12 @@ Execute this command to remove "none" cache. (for zsh in macOS terminal)
 docker rmi `docker images | grep none | cut -b 50-64 | tr '\n' ' '`
 ```
 
+Or execute this command to remove
+
+```bash
+docker system prune -a
+```
+
 If you remove many image cache, cho-kimochee !!
 
 ## Test with Docker
