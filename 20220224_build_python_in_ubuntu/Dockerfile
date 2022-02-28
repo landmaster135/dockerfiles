@@ -41,13 +41,23 @@ RUN apt install git -y
 # pip install
 RUN pip install --no-cache-dir -r requirements.txt
 
+# pip install for test module
+# COPY ./requirements_test.txt /usr/src/app/requirements_test.txt
+# RUN pip install --no-cache-dir -r requirements_test.txt
+
 # for tkinter (insufficient)
 # RUN apt update
 # RUN apt install ubuntu-desktop -y
 # RUN apt install python3-tk -y
 
 # install landmasterlibrary
-# RUN pip install git+https://github.com/landmaster135/landmasterlibrary.git
+# RUN pip install git+https://github.com/landmaster135/landmasterlibrary.git@main
+# RUN pip install -U git+https://github.com/landmaster135/landmasterlibrary.git@main
+
+# install ffmpeg if you wanna use
+# RUN apt update
+# RUN apt install ffmpeg -y
+# RUN ffmpeg -version
 
 # copy files
 COPY ./ /usr/src/app
@@ -60,3 +70,6 @@ COPY ./ /usr/src/app
 # RUN coverage run test/test_helpers.py
 # RUN coverage report -m test/test_helpers.py
 # RUN coverage html -d coverage_html
+
+
+# ls /usr/local/lib/python3.8/dist-packages -1v

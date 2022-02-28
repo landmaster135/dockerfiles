@@ -5,19 +5,19 @@
 DockerイメージをBuildする
 
 ```dosbatch
-docker build -t my-cloudsdk-container .
+docker build -t my-python-container .
 ```
 
 Dockerイメージを起動する
 
 ```dosbatch
-docker run -it --rm --name my-running-container my-cloudsdk-container
+docker run -it --rm --name my-running-container my-python-container
 ```
 
 両方まとめて実行する
 
 ```dosbatch
-docker build -t my-cloudsdk-container . && docker run -it --rm --name my-running-container my-cloudsdk-container
+docker build -t my-python-container . && docker run -it --rm --name my-running-container my-python-container
 ```
 
 ## Check version of python and pip.
