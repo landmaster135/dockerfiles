@@ -70,6 +70,3 @@ COPY ./ /usr/src/app
 # RUN coverage run test/test_helpers.py
 # RUN coverage report -m test/test_helpers.py
 # RUN coverage html -d coverage_html
-
-
-# ls /usr/local/lib/python3.8/dist-packages -1v
