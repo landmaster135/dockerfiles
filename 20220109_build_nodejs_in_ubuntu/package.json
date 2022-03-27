@@ -1,8 +1,0 @@
-{
-    "name": "feed-fetcher",
-    "version": "0.1.0",
-    "description": "",
-    "scripts": {
-        "start": "node index.js"
-    }
-}

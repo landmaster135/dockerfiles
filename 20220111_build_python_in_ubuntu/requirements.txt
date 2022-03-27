@@ -1,5 +1,0 @@
-pandas
-flask
-flask_session
-werkzeug
-sklearn

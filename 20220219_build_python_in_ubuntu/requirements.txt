@@ -1,9 +1,0 @@
-###### Requirements with Version Specifiers ######
-### for app ###
-discord.py[voice]>=1.7.3
-janome>=0.4.1
-pyyaml>=6.0
-# asyncio>=3.4.3
-### for test ###
-coverage>=6.3.1
-aiounittest>=1.4.1

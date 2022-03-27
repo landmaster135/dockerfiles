@@ -1,0 +1,8 @@
+###### Requirements with Version Specifiers ######
+### for app ###
+janome==0.4.1
+opencv-python>=4.5.5.62
+pyyaml>=6.0
+glob2>=0.7
+google-api-python-client>=2.38.0
+pandas>=1.4.1
