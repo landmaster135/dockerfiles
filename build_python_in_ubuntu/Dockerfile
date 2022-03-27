@@ -29,7 +29,11 @@ RUN pip install --upgrade pip
 RUN pip install --upgrade setuptools
 # save docker layer cache
 WORKDIR /usr/src/app
+
+# save layer cache
 COPY ./requirements.txt /usr/src/app/requirements.txt
+# save layer cache to make app for neptunus-note repo
+# COPY ./generateIssueWf/requirements.txt /usr/src/app/generateIssueWf/requirements.txt
 
 # use git
 # RUN apt install git-all -y
@@ -38,6 +42,8 @@ RUN apt install git -y
 # RUN chmod 777 node_modules/feed-fetcher/bin/run
 # CMD npm run start
 
+# change working directory to make app for neptunus-note repo
+# WORKDIR /usr/src/app/generateIssueWf
 # pip install
 RUN pip install --no-cache-dir -r requirements.txt
 
