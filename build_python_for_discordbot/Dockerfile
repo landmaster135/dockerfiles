@@ -69,6 +69,9 @@ RUN pip install --no-cache-dir -r requirements_test.txt
 COPY ./ /usr/src/app
 ARG pytest_alias="alias pytest='pytest -n auto'"
 RUN echo ${pytest_alias} >> ~/.bashrc
+ARG python_app_run="alias pa='python3 app.py'"
+RUN echo ${python_app_run} >> ~/.bashrc
+
 # execute Python code
 # RUN python3 app.py
 # RUN python3 test/test_helpers.py
