@@ -67,7 +67,9 @@ RUN pip install --no-cache-dir -r requirements_test.txt
 
 # copy files
 COPY ./ /usr/src/app
-ARG pytest_alias="alias pytest='pytest -n auto'"
+ARG pytest_alias="alias pytest-n='pytest -n auto --cov --cov-branch'"
+RUN echo ${pytest_alias} >> ~/.bashrc
+ARG pytest_alias="alias pytest-r='pytest -n auto --cov --cov-branch --cov-report=html'"
 RUN echo ${pytest_alias} >> ~/.bashrc
 ARG python_app_run="alias pa='python3 app.py'"
 RUN echo ${python_app_run} >> ~/.bashrc
