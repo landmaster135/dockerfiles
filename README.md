@@ -63,7 +63,7 @@ docker ps
 docker cp <container ID>:/usr/app/testtest.md .
 ```
 
-### In this case, you can get a specified file by specifying container ID and path.
+### In this case, you can get a specified file by specifying container's name and file's path.
 
 ```bash
 docker ps --filter name=my-python-container --format "{{.ID}}" | awk '{ printf "docker cp %s:/usr/src/app/htmlcov .", $0, NR }' | sh;
